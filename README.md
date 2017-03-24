@@ -1,19 +1,11 @@
 # Animate-Your-Name
 
-<style type="text/css">
-	#myCanvas {
-		background-color: blue;
-	}
-</style>
+Everything needed to animate your name in Javascript is included in the repo.
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+## Getting Started
 
-<script type="text/javascript" src="alphabet.js"></script>
+Simply create a new folder and `git clone git@github.com:CharlesBlack89/Animate-Your-Name.git`
 
-<div class="animate">
-    <canvas id="myCanvas"></canvas>
-</div>
+Open `index.html` in a browser and voila.
 
-<script type="text/javascript" src=bubbles.js></script>
-
-<script type="text/javascript" src="main.js"></script>
+Assuming you **don't** want to see *my* name animated, open `main.js` and change the variable `myName` to equal your name...Or something clever, like a <3 next to your favorite person.
