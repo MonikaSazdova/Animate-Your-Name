@@ -4,7 +4,7 @@ Everything needed to animate your name in Javascript is included in the repo.
 
 ## Getting Started
 
-Simply create a new folder and `git clone git@github.com:CharlesBlack89/Animate-Your-Name.git`
+Simply create a new folder and `git clone git@github.com:aedifex/Animate-Your-Name.git`
 
 Open `index.html` in a browser and voila.
 
