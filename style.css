@@ -2,8 +2,8 @@ canvas {
 	position: absolute;
 	top: 50px;
 	left: 0;
-	/* background: red; */
-	/* word-wrap: break-word; */
+	background: red;
+	word-wrap: break-word;
 }
 
 /* body {
