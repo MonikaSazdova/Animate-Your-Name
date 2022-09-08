@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link rel="stylesheet" href="style.css">
   <style type="text/css">
+
 
   </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="alphabet.js"></script>
   </head>
   <body>
-  <div class="animate">
-    <canvas id="myCanvas"></canvas>
-  </div>
+    <div class="app">
+      <div class="birthday-gift" id="gift">
+        <div class="gift">
+        <input id='click' type='checkbox'>
+        <label class='click' for='click'></label>
+        <div class="wishes">
+          <button class="playBtn" id="play">Play</button>
+        </div>
+             <div class="sparkles">
+            <div class="spark1"></div>
+            <div class="spark2"></div>
+            <div class="spark3"></div>
+            <div class="spark4"></div>
+            <div class="spark5"></div>
+            <div class="spark6"></div>
+          </div>
+          </div>
+      </div>
+    <!-- <div class="animate"> -->
+      <canvas id="myCanvas"></canvas>
+      <div id="game" class="memoryGame">
+        <h1>The S'mores Memory Game<small>
+          Match the memories that we shared together. <br/>P.S. Can you guess what each card represents?</small></h1>
+     <div class="game-wrapper">
+       <div class="that-memory-game"></div>
+       <div class="result-message"><span class="success">Yay! 😉 </span><span class="fail">You can do better S'mores 😧</span></div>
+       <div class="game-end">
+          🎉 You did it! 🎉<br/>Have a cookie 🍪</div>
+     </div>
+     <!-- <aside class="context">
+       <div class="explanation">
+          Inspired by the song 🎵 <a href="https://youtu.be/MlwooqWrUrU" target="_blank">I Got You</a>  🎵 from Bring It On: The Musical.</div>
+     </aside>
+     <footer>
+      <a href="https://twitter.com/meowlivia_" target="_blank">
+        <i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank">
+          <i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank">
+            <i class="icon-social-dribbble icons"></i>
+          </a>
+        </footer> -->
+      </div>
+    </div>
+
+
+
+
+  <!-- </div> -->
+
+
+
+
     <script type="text/javascript" src="bubbles.js"></script>
     <script type="text/javascript" src="main.js"></script>
 

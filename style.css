@@ -1,0 +1,460 @@
+canvas {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	/* background: red; */
+	/* word-wrap: break-word; */
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.birthday-gift {
+	position: absolute;
+	top: 550px;
+	left: 700px;
+}
+
+.birthday-gift:before {
+	content: "";
+	position: absolute;
+	width: 170px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 90px;
+	left: -10px;
+}
+
+input#click {
+	display: none;
+}
+
+.gift {
+	position: relative;
+	width: 150px;
+	height: 100px;
+	background-color: #e9c46a;
+}
+
+.gift:before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 100px;
+	background-color: #e76f51;
+	left: 62px;
+}
+
+.gift:after {
+	content: "";
+	position: absolute;
+	box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
+	width: 150px;
+	height: 100px;
+}
+
+.click {
+	position: absolute;
+	background-color: #e9c46a;
+	width: 170px;
+	height: 40px;
+	top: -40px;
+	left: -10px;
+	transform-origin: bottom left;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.click:before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 40px;
+	background-color: #e76f51;
+	left: 69px;
+}
+
+.click:after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 0;
+	border-bottom: 30px solid #e76f51;
+	border-top: 30px solid #e76f51;
+	border-left: 0px solid transparent;
+	border-right: 30px solid transparent;
+	transform: rotate(-90deg);
+	left: 65px;
+	top: -47px;
+}
+
+#click:checked+.click {
+	transform: rotate(-110deg) scaleX(0.85);
+}
+
+.wishes {
+	position: absolute;
+	transition: .5s;
+	/* color: #333; */
+	width: 100%;
+	height: 100%;
+	font-size: 37px;
+	text-align: center;
+	z-index: -1;
+	left: 5px;
+}
+
+
+.playBtn {
+	display: inline-block;
+	padding: 0.2em 0.7em;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #FFFFFF;
+	background-color: #4eb5f1;
+	text-align: center;
+	transition: all 0.2s;
+	z-index: 99999;
+}
+
+.playBtn:hover {
+	background-color: #4095c6;
+}
+
+@media all and (max-width:30em) {
+	.playBtn {
+		display: block;
+		margin: 0.2em auto;
+	}
+}
+
+.playBtn:focus {
+	background-color: yellow;
+}
+
+
+#click:checked~.wishes {
+	transform: translateY(-100px);
+}
+
+#click:checked~.sparkles {
+	display: block;
+}
+
+
+
+.sparkles {
+	position: absolute;
+	display: none;
+	top: -15px;
+	z-index: -2;
+	left: 40px;
+}
+
+.spark1,
+.spark2,
+.spark3,
+.spark4,
+.spark5,
+.spark6 {
+	position: absolute;
+	background-color: #fee440;
+	border-radius: 50%;
+	top: -9px;
+	z-index: -1;
+}
+
+.spark1 {
+	width: 8px;
+	height: 8px;
+	left: 30px;
+	top: -9px;
+	animation: fire 0.9s ease-in-out infinite, color 0.4s linear infinite;
+}
+
+.spark1:before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 8px;
+	left: 11px;
+	background-color: #fee440;
+	border-radius: 50%;
+}
+
+.spark2 {
+	width: 9px;
+	height: 9px;
+	left: 33px;
+	top: -5px;
+	animation: fire2 0.28s ease-in-out infinite, color 0.4s linear infinite;
+}
+
+.spark2:before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 12px;
+	left: 3px;
+	background-color: #fee440;
+	border-radius: 50%;
+}
+
+.spark3 {
+	width: 8.5px;
+	height: 8.5px;
+	left: 33px;
+	top: -5px;
+	animation: fire3 0.36s ease-in-out infinite, color2 0.4s linear infinite;
+}
+
+.spark3:before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 12px;
+	left: -1px;
+	background-color: #fee440;
+	border-radius: 50%;
+}
+
+.spark4 {
+	width: 7px;
+	height: 7px;
+	left: 27px;
+	top: -5px;
+	animation: fire2 0.24s ease-in-out infinite, color2 0.2s linear infinite;
+}
+
+.spark5 {
+	width: 7px;
+	height: 7px;
+	left: 29px;
+	top: -5px;
+	animation: fire3 0.45s ease-in-out infinite, color 0.2s linear infinite;
+}
+
+.spark6 {
+	width: 6px;
+	height: 6px;
+	left: 29px;
+	top: -5px;
+	animation: fire 0.35s ease-in-out infinite, color2 0.2s linear infinite;
+}
+
+@keyframes fire3 {
+	100% {
+		transform: translateX(20px) translateY(-93px);
+		opacity: 0.3;
+	}
+}
+
+@keyframes fire2 {
+	100% {
+		transform: translateX(-5px) translateY(-90px);
+		opacity: 0.3;
+	}
+}
+
+@keyframes fire {
+	100% {
+		transform: translateX(-25px) translateY(-95px);
+		opacity: 0.3;
+	}
+}
+
+@keyframes color {
+	from {
+		background-color: #d00000;
+	}
+
+	to {
+		background-color: #0081a7;
+	}
+}
+
+@keyframes color2 {
+	from {
+		background-color: #8cff00;
+	}
+
+	to {
+		background-color: #1d2d44;
+	}
+}
+
+.mainContainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.memoryGame {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+
+h1 {
+	width: 100%;
+	margin: 3em auto 1.5em;
+	font-size: 40px;
+	text-align: center;
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h1 small {
+	text-transform: none;
+	display: block;
+	margin: 20px 0;
+	color: #999;
+}
+.game-wrapper {
+	position: relative;
+}
+.that-memory-game {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 4em auto;
+}
+.card-wrapper {
+	position: relative;
+	margin: 8px;
+	width: 180px;
+	height: 180px;
+	z-index: 1;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.card {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.2s linear;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+	top: -10px;
+	box-shadow: 0px 20px 20px -6px rgba(0, 0, 0, 0.2);
+}
+.card .image {
+	width: 180px;
+	height: 180px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+.card.flipped, .card.done {
+	top: 2px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform: rotateY(180deg);
+	pointer-events: none;
+}
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+}
+.face.front {
+	background-image: url('assets/smores.png');
+	background-size: cover;
+	background-position: center;
+}
+.face.back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: rotateY(180deg);
+}
+
+.result-message .success, .result-message .fail, .game-end {
+	position: fixed;
+	padding: 20px;
+	display: inline-block;
+ ;
+	top: 20px;
+	right: 20px;
+	opacity: 0;
+	z-index: 1000;
+	width: 260px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s ease;
+	border-radius: 5px;
+	color: #fff;
+}
+.success {
+	background: linear-gradient(to bottom right, #a8e063, #56ab2f);
+}
+.fail {
+	background: linear-gradient(to bottom right, #ed213a, #93291e);
+}
+.game-end {
+	text-align: center;
+	background: linear-gradient(to bottom right, #414345, #232526);
+}
+/* aside.context {
+	text-align: center;
+	color: #333;
+}
+aside.context a {
+	text-decoration: none;
+	color: #333;
+	padding: 3px 0;
+	border-bottom: 1px dashed;
+}
+aside.context .explanation {
+	max-width: 700px;
+	margin: 6em auto 0;
+}
+footer {
+	text-align: center;
+	margin: 4em auto;
+	width: 100%;
+}
+footer a {
+	text-decoration: none;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: transparent;
+	border: 1px dashed #333;
+	color: #333;
+	margin: 5px;
+}
+footer a:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+footer a .icons {
+	margin-top: 12px;
+	display: inline-block;
+	font-size: 20px;
+} */
