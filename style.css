@@ -2,16 +2,7 @@ canvas {
 	position: absolute;
 	top: 50px;
 	left: 0;
-	background: red;
-	word-wrap: break-word;
 }
-
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 
 .birthday-gift {
 	position: absolute;
