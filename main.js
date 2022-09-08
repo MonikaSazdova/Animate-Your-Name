@@ -1,4 +1,4 @@
-var myName = "Happy Birthday S'mores!"
+var myName = "Happy Birthday"
 
 
 var red = [0, 100, 63];
