@@ -1,3 +1,4 @@
+
 function Vector(x, y, z) {
     this.x = x;
     this.y = y;
@@ -32,6 +33,7 @@ function PointCollection() {
     };
 
     this.shake = function () {
+
         var randomNum = Math.floor(Math.random() * 5) - 2;
 
         for (var i = 0; i < this.points.length; i++) {
@@ -188,6 +190,7 @@ function bounceName() {
 }
 
 function bounceBubbles() {
+
     draw();
     update();
     setTimeout(bounceBubbles, 30);
