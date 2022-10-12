@@ -55,6 +55,12 @@ const cards = [
   {type: "20", image: "assets/rain.png"},
   {type: "21", image: "assets/notepad.png"},
   { type: "21", image: "assets/notepad.png" },
+  {type: "22", image: "assets/palcho.png"},
+  { type: "22", image: "assets/palcho.png" },
+  {type: "23", image: "assets/rose.png"},
+  { type: "23", image: "assets/rose.png" },
+  {type: "24", image: "assets/outfit.png"},
+  { type: "24", image: "assets/outfit.png" },
 ];
 
 
